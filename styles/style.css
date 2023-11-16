@@ -1,0 +1,271 @@
+/**
+HEADER-FOOTER
+*/
+
+/* Header */
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  max-width: 1760px;
+  margin: 0 auto;
+  font-family: "Futura New", Helvetica, Arial, sans-serif;
+}
+
+.header__logo {
+  width: 334px;
+}
+
+.header__logo-image {
+  width: 100px;
+  height: 100px;
+}
+
+.header__location {
+  width: 57px;
+  height: 31px;
+}
+
+.header__menu {
+  display: flex;
+  align-items: center;
+}
+
+.header__links-list {
+  display: flex;
+  gap: 81px;
+  font-size: 20px;
+  list-style-type: none;
+}
+
+.header__link {
+  color: #c3b9b5;
+  font-family: "Futura New", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.header__link:hover {
+  color: #59443f;
+}
+
+.header__location-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header__location-link {
+  display: flex;
+  align-items: center;
+  color: #ffc59e;
+  font-weight: 700;
+  font-size: 19px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1490px) {
+  .header__logo {
+    width: inherit;
+  }
+  .header__links-list {
+    gap: 45px;
+    font-size: 18px;
+  }
+  .header__location-container {
+    justify-content: flex-start;
+  }
+  .header__location-link {
+    font-family: "Futura New", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .header__logo {
+    width: inherit;
+  }
+  .header__links-list {
+    gap: 40px;
+    font-size: 17px;
+  }
+  .header__location-container {
+    justify-content: flex-start;
+  }
+  .header__location-link {
+    font-family: "Futura New", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+  }
+}
+
+/* Main */
+
+.main {
+  height: 2000px;
+  min-height: 2000px;
+  font-family: "Futura New", Helvetica, Arial, sans-serif;
+}
+
+/* Footer */
+
+.footer {
+  background-color: #59443f;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 90px 0 60px;
+  font-family: "Futura New", Helvetica, Arial, sans-serif;
+}
+
+.footer__menu-list {
+  width: 192px;
+  list-style-type: none;
+}
+
+.footer__menu-list-item {
+  color: #fff;
+  font-weight: 400;
+  font-size: 20px;
+  font-style: normal;
+  line-height: 30px;
+}
+
+.footer__menu-link {
+  text-decoration: none;
+}
+
+.footer__menu-link:hover {
+  text-decoration: underline;
+}
+
+.footer__social-list {
+  display: flex;
+  gap: 50px;
+  list-style-type: none;
+}
+
+.footer__social-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.footer__menu-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__menu {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  margin-top: 42px;
+}
+
+.footer__right {
+  padding-left: 258px;
+}
+
+.footer__mobile-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 36px;
+}
+
+.footer__mobile-link {
+  padding-top: 9px;
+}
+
+.footer__mobile-icon {
+  height: 41px;
+}
+
+.footer__link-list {
+  margin-top: 26px;
+  list-style-type: none;
+}
+
+.footer__link-list-item {
+  font-weight: 400;
+  font-size: 20px;
+  font-style: normal;
+  line-height: 30px;
+}
+
+.footer__link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer__link:hover {
+  text-decoration: underline;
+}
+
+.footer__heart-text {
+  display: flex;
+  align-items: center;
+  margin-top: 70px;
+  color: #fff;
+  font-weight: 400;
+  font-size: 20px;
+  font-style: normal;
+  line-height: 30px;
+}
+
+.footer__heart-icon {
+  width: 22px;
+  height: 22px;
+  margin: 0 3px;
+}
+
+.footer__menu-list-logo {
+  display: flex;
+}
+
+.footer_logo-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer_logo-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -112px;
+  z-index: 1;
+  width: 90px;
+  height: 90px;
+  background: url(../images/logo-invert.svg) no-repeat center center/cover;
+}
+
+.footer__logo {
+  position: relative;
+  display: flex;
+}
+
+.footer__logo-image {
+  width: 90px;
+  height: 90px;
+}
+
+.footer_logo-title {
+  color: #fff;
+  font-family: "SchoolBook", "Times New Roman", Times, serif;
+  font-weight: 700;
+  font-size: 51px;
+  font-style: normal;
+  line-height: 64px;
+}
+
+.footer_logo-description {
+  color: #fff;
+  font-weight: 400;
+  font-size: 20px;
+  font-style: normal;
+  line-height: 13px;
+}
