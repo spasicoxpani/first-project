@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @font-face {
   font-family: 'Futura New';
   src: url('./FuturaNewLight-Reg.eot');
@@ -45,3 +46,40 @@
   font-style: normal;
   font-display: swap;
 }
+=======
+@font-face{
+    font-family: 'SchoolBook';
+    src: url(../fonts/SchoolBookC.ttf) format('truetype');
+    src:url(../fonts/SchoolBookC.woff) format('woff');
+    src:url(../fonts/SchoolBookC.woff2) format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face{
+    font-family: 'SchoolBook Bold';
+    src: url(../fonts/SchoolBookC-Bold.ttf) format('truetype');
+    src:url(../fonts/SchoolBookC-Bold.woff) format('woff');
+    src:url(../fonts/SchoolBookC-Bold.woff2) format('woff2');
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face{
+    font-family: 'Futura New Bold';
+    src: url(../fonts/FuturaNewBold-Reg.ttf) format('truetype');
+    src:url(../fonts/FuturaNewBold-Reg.woff) format('woff');
+    src:url(../fonts/FuturaNewBold-Reg.woff2) format('woff2');
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face{
+    font-family: 'Futura New';
+    src: url(../fonts/FuturaNewLight-Reg.ttf) format('truetype');
+    src:url(../fonts/FuturaNewLight-Reg.woff) format('woff');
+    src:url(../fonts/FuturaNewLight-Reg.woff2) format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+>>>>>>> main
