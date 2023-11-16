@@ -9,10 +9,13 @@ GLOBAL STYLES
 }
 
 body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-width: 1100px;
   max-width: 1920px;
   margin: 0;
-  font-family: Raleway, sans-serif;
+  padding: 0;
   background: #fffefe;
 }
 
@@ -44,7 +47,6 @@ a {
 address {
   font-style: inherit;
 }
-
 
 /**
 HEADER-FOOTER
@@ -318,6 +320,67 @@ HEADER-FOOTER
   line-height: 13px;
 }
 
+/**
+card section
+*/
+
+.card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 24px;
+  margin-top: 150px;
+}
+
+.cards {
+  position: relative;
+  width: 320px;
+  height: 220px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  background: #fffefe;
+}
+
+.card__title {
+  padding: 24px;
+  color: #59443f;
+  font-family: "SchoolBook", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  font-style: normal;
+  line-height: 40px;
+}
+
+.card__image {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  width: 110px;
+  height: 110px;
+  padding-top: 22px;
+  padding-right: 24px;
+  padding-bottom: 24px;
+  object-fit: contain;
+}
+
+.small__text {
+  position: absolute;
+  bottom: 0;
+  left: 24px;
+  font-family: Futura New;
+  font-weight: 400;
+  font-size: 20px;
+  font-style: normal;
+  line-height: 20px;
+}
+
+.cards:hover .card__image path {
+  fill: #59443f;
+}
+
+.card:hover {
+  cursor: pointer;
+}
 
 /**
 conteiner section
