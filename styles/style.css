@@ -1,4 +1,71 @@
-<<<<<<< HEAD
+body {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 24px;
+  margin-top: 150px ;
+}
+
+.cards {
+  width: 320px;
+  height: 220px;
+  border-radius: 20px;
+  background: #fffefe;
+  position: relative;
+  border: 1px solid #ccc;
+}
+
+.card__title {
+  color: #59443f;
+  font-family: 'SchoolBook', sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  padding: 24px;
+}
+
+.card__image {
+  padding-top: 22px;
+  width: 110px;
+  height: 110px;
+  object-fit:contain;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  padding-right: 24px;
+  padding-bottom: 24px;
+}
+
+.small__text {
+  position: absolute;
+  bottom: 0;
+  font-family: Futura New;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  left: 24px;
+}
+
+
+
+.cards:hover .card__image path {
+  fill: #59443F; 
+}
+
+.card:hover{
+  cursor: pointer;
+}
+
 /**
 HEADER-FOOTER
 */
@@ -270,73 +337,3 @@ HEADER-FOOTER
   font-style: normal;
   line-height: 13px;
 }
-=======
-body {
-  display: flex;
-  margin: 0;
-  padding: 0;
-  justify-content: center;
-  align-items: center;
-}
-
-.card {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  gap: 24px;
-  margin-top: 150px ;
-}
-
-.cards {
-  width: 320px;
-  height: 220px;
-  border-radius: 20px;
-  background: #fffefe;
-  position: relative;
-  border: 1px solid #ccc;
-}
-
-.card__title {
-  color: #59443f;
-  font-family: 'SchoolBook', sans-serif;
-  font-size: 30px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 40px;
-  padding: 24px;
-}
-
-.card__image {
-  padding-top: 22px;
-  width: 110px;
-  height: 110px;
-  object-fit:contain;
-  position: absolute;
-  bottom: 0px;
-  right: 0px;
-  padding-right: 24px;
-  padding-bottom: 24px;
-}
-
-.small__text {
-  position: absolute;
-  bottom: 0;
-  font-family: Futura New;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 20px;
-  left: 24px;
-}
-
-
-
-.cards:hover .card__image path {
-  fill: #59443F; 
-}
-
-.card:hover{
-  cursor: pointer;
-}
-
->>>>>>> main
