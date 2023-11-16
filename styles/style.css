@@ -1,0 +1,123 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  color: #59443f;
+  font-family: "Futura New", Arial, sans-serif;
+  font-size: 20px;
+  background: #fffefe;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+blockquote,
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.pets-count {
+  display: flex;
+  flex-direction: column;
+  margin-block: 316px;
+  align-items: center;
+  gap: 20px;
+}
+
+.pets-count__number {
+  color: var(--brown, #59443f);
+  font-family: "School Book", "Times New Roman", Times, serif;
+  font-size: 144px;
+  font-weight: 700;
+  line-height: 110px; /* 76.389% */
+  inline-size: 716px;
+  letter-spacing: 0.01em;
+}
+
+.letter-spacing-extended {
+  letter-spacing: 50px;
+}
+
+.pets-count__text {
+  color: var(--text, #080606);
+  font-family: Futura New;
+  font-size: 80px;
+  font-weight: 400;
+  line-height: 110px; /* 137.5% */
+  inline-size: 716px;
+}
+
+.pets-count__image-container {
+  inline-size: 288px;
+  block-size: 223px;
+  background-image: url("../images/image_bird@2x.svg");
+  position: relative;
+  inset-block-end: 85px;
+  inset-inline-start: 175px;
+}
+
+.reasons {
+  margin-block: 0 309px;
+  margin-inline: 7.3vw;
+}
+
+.reasons__heading {
+  text-align: center;
+  color: #080606;
+  font-family: "School Book", "Times New Roman", Times, serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 40px; /* 100% */
+  margin-block-end: 104px;
+}
+
+.reasons__cards-list {
+  display: grid;
+  grid-row-gap: 70px;
+  grid-template-columns: repeat(auto-fill, minmax(484px, 1fr));
+  justify-items: center;
+}
+
+.reasons__cards-list-item {
+  inline-size: 484px;
+}
+
+.reasons__card-title {
+  color: var(--text, #080606);
+  font-family: "School Book", "Times New Roman", Times, serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 40px; /* 133.333% */
+  margin-block-end: 36px;
+}
+
+.reasons__card {
+  block-size: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.reasons__card-icon {
+  block-size: 80px;
+  align-self: center;
+}
+
+.reasons__card-description {
+  inline-size: 318px;
+
+  line-height: 30px; /* 150% */
+}

@@ -1,0 +1,29 @@
+@font-face {
+  font-family: 'Futura New';
+  src: local('Futura New Book Reg'), local('Futura-New-Book-Reg'),
+      url('FuturaNewBook-Reg.woff2') format('woff2'),
+      url('FuturaNewBook-Reg.woff') format('woff'),
+      url('FuturaNewBook-Reg.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'School Book';
+  src: local('School Book Regular'), local('School-Book-Regular'),
+      url('SchoolBookC.woff2') format('woff2'),
+      url('SchoolBookC.woff') format('woff'),
+      url('SchoolBookC.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'School Book';
+  src: local('School Book Bold'), local('School-Book-Bold'),
+      url('SchoolBookC-Bold.woff2') format('woff2'),
+      url('SchoolBookC-Bold.woff') format('woff'),
+      url('SchoolBookC-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
