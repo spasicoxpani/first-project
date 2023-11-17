@@ -3,11 +3,7 @@ body {
   padding: 0;
 }
 
-.page{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 
 .card {
   display: grid;
@@ -16,6 +12,9 @@ body {
   gap: 24px;
   margin-top: 150px;
   margin-bottom: 150px;
+  justify-content: center;
+  align-items: center;
+  margin-inline: 10vw;
 }
 
 .cards {
