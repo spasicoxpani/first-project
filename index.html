@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Айболит круглосуточная ветклиника</title>
     <link rel="stylesheet" href="./fonts/fonts.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
     <link rel="stylesheet" href="./styles/style.css">
-    <script src="./js/js.js"></script>
+    
+    <!-- <script src="./js/js.js"></script> -->
 </head>
-<body onload="show()">
+<body>
         <section class="history" >
             <h2 class="history__title">История компании</h2>
             <p class="history__text">
@@ -25,11 +28,11 @@
                     </svg>
             </button>
             <h2 class="our_specialistes">Наши специалисты</h2>
-            <div class="slaider__container" >
-                <div class="our_specialistes__slaider">
-                    <div id="leftarrow" onclick="moveLeft()">
-                        <button class="button__slaider"  >
-                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <div class="swiper__our_specialistes">
+                <div class="gallery">
+                    <div class="swiper__navigation">
+                        <button class="button__slaider button__prev">
+                            <svg  width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g filter="url(#filter0_b_3_12)">
                                 <path class="button__slaider-image" fill-rule="evenodd" clip-rule="evenodd" d="M20 40C8.9543 40 0 31.0457 0 20C0 8.9543 8.9543 0 20 0C31.0457 0 40 8.9543 40 20C40 31.0457 31.0457 40 20 40Z" fill="#FFC59E"/>
                                 <path d="M15.5713 20C15.5713 19.7849 15.6553 19.5699 15.823 19.4059L21.1033 14.2462C21.4391 13.9179 21.9837 13.9179 22.3195 14.2462C22.6552 14.5743 22.6552 15.1063 22.3195 15.4346L17.6472 20L22.3193 24.5654C22.6551 24.8936 22.6551 25.4256 22.3193 25.7537C21.9836 26.0821 21.439 26.0821 21.1031 25.7537L15.8229 20.594C15.6551 20.43 15.5713 20.215 15.5713 20Z" fill="white" stroke="white"/>
@@ -44,51 +47,7 @@
                                 </defs>
                                 </svg>
                         </button>
-                    </div>
-                   <div class="our_specialist__slide" id="slaider1">
-                        <a href="#0" >
-                            <img class="our_specialistes-photo"
-                            src="./images/Rectangle.png"
-                            alt="">
-                        </a>
-                   </div>
-                   <div class="our_specialist__slide" id="slaider2">
-                        <a  href="#0" >
-                            <img class="our_specialistes-photo"
-                            src="./images/Rectangle Copy 19.png"
-                            alt="">
-                        </a>
-                   </div>
-                   <div class="our_specialist__slide" id="slaider3">
-                        <a  href="#0" >
-                            <img class="our_specialistes-photo"
-                            src="./images/Rectangle Copy 21.png"
-                            alt="">
-                        </a>
-                   </div>
-                   <div class="our_specialist__slide" id="slaider4">
-                        <a  href="#0" >
-                            <img class="our_specialistes-photo"
-                            src="./images/Rectangle Copy 36.png"
-                            alt="">
-                        </a>
-                   </div>
-                   <div class="our_specialist__slide" id="slaider5">
-                        <a  href="#0" >
-                            <img class="our_specialistes-photo"
-                            src="./images/Rectangle Copy 37.png"
-                            alt="">
-                        </a>
-                   </div>
-                   <div class="our_specialist__slide" id="slaider6">
-                        <a  href="#0" >
-                            <img class="our_specialistes-photo"
-                            src="./images/Rectangle Copy 38.png"
-                            alt="">
-                        </a>
-                   </div>
-                    <div id="raightarrow" onclick="moveRight()">
-                        <button class="button__slaider"  >
+                        <button class="button__slaider button__next">
                             <svg  width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g filter="url(#filter0_b_3_12)">
                                 <path class="button__slaider-image" fill-rule="evenodd" clip-rule="evenodd" d="M20 40C8.9543 40 0 31.0457 0 20C0 8.9543 8.9543 0 20 0C31.0457 0 40 8.9543 40 20C40 31.0457 31.0457 40 20 40Z" fill="#FFC59E"/>
@@ -105,6 +64,66 @@
                                 </svg>
                         </button>
                     </div>
+                    <div class="swiper mySwiper-specialistes">
+                        <div class="swiper-wrapper">
+        
+                          <div class="swiper-slide">
+                            <a class="swiper-slide__link" href="#0" >
+                                <img class="our_specialistes-photo"
+                                src="./images/Ellipse.png"
+                                alt="">
+                            </a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a class="swiper-slide__link" href="#0" >
+                                <img class="our_specialistes-photo"
+                                src="./images/Rectangle Copy 19.png"
+                                alt="">
+                            </a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a class="swiper-slide__link" href="#0" >
+                                <img class="our_specialistes-photo"
+                                src="./images/Rectangle Copy 21.png"
+                                alt="">
+                            </a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a class="swiper-slide__link"  href="#0" >
+                                <img class="our_specialistes-photo"
+                                src="./images/Ellipse (1).png"
+                                alt="">
+                            </a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a class="swiper-slide__link" href="#0" >
+                                <img class="our_specialistes-photo"
+                                src="./images/Ellipse (2).png"
+                                alt="">
+                            </a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a class="swiper-slide__link" href="#0" >
+                                <img class="our_specialistes-photo"
+                                src="./images/Rectangle Copy 36.png"
+                                alt="">
+                            </a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a class="swiper-slide__link" href="#0" >
+                                <img class="our_specialistes-photo"
+                                src="./images/Ellipse (3).png"
+                                alt="">
+                            </a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a class="swiper-slide__link" href="#0" >
+                                <img class="our_specialistes-photo"
+                                src="./images/Ellipse (4).png"
+                                alt="">
+                            </a>
+                          </div>
+                        </div>
                 </div>
             </div>
             <button class="button_our_specialistes__read_more" type="button">
@@ -116,5 +135,7 @@
                 </svg>
             </button>
         </section>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="./js/js.js"></script>
 </body>
 </html>

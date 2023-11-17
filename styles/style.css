@@ -5,7 +5,7 @@
 }
 
 body {
-  width: 1920px;
+  max-width: 1920px;
   margin: 0;
   margin-left: auto;
   margin-right: auto;
@@ -47,14 +47,16 @@ h2 {
 }
 
 .history__text {
-    display: block;
-    padding-left: 720px;
-    padding-right: 720px;
+    display: flex;
+    justify-content: center;
+    margin-left: 720px;
+    margin-right: 720px;
     padding-bottom: 36px;
     color: var(--brown, #59443F);
     font-family: 'Futura New', sans-serif;
     font-size: 20px;
     line-height: 30px;
+    width: 479px;
 }
 
 .button_history__read_more, .button_our_specialistes__read_more {
@@ -74,8 +76,8 @@ h2 {
 }
 
 .button_history__read_more:active, .button_our_specialistes__read_more:active {
- color: #59443F;
- fill: #59443F;
+    color: #59443F;
+    fill: #59443F;
 }
 
 .button_history__read_more {
@@ -87,33 +89,52 @@ h2 {
     padding-bottom: 48px;
 }
 
+.gallery {
+    position: relative;
+    margin: 0 389px 36px 388px;
+}
 
-.our_specialistes__slaider {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 15px;
+.swiper-slide__link {
+    display: block;
     height: 178px;
-    margin: 0 334px 36px 333px;
-  }
-
-  .our_specialist__slide {
     width: 178px;
-    display: none;
-  }
+
+}
+
+.our_specialistes-photo {
+    width: 178px;
+    height: 178px;
+    object-fit: cover;
+}
 
 .button__slaider {
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
     width: 40px;
     height: 40px;
     background-color: transparent;
     border: none;
     cursor: pointer;
+
+}
+
+.button__prev {
+    left: -55px;
+}
+
+.button__next {
+    right: -55px;
 }
 
 .button__slaider-image:active {
     fill: #59443F;
 }
 
+.swiper-button-disabled {
+    opacity: 0.4;
+    cursor: default;
+}
 
 .button_our_specialistes__read_more {
     margin: 0 856px 0 855px;

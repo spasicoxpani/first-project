@@ -1,42 +1,26 @@
-var left=1;
-var right=6;
-
-function show() {
-    for(i=left; i<=right; i++) {
-        document.getElementById("slaider" +i).style.display="inline-block";
-    }
-}
-
-function moveLeft() {
-    if(left<=1 && right<=5)
-    {
-        document.getElementById("slaider"+left).style.display="none";
-        left+=1;
-        right+=1;
-    
-        for(i=left;i<=right;i++)
-        {
-            document.getElementById("slaider" +i).style.display="inline-block";
-        }
-    }
-    else
-        return;
-
-}
-
-function moveRight() {
-    if(left>=2 && right>=6)
-    {
-        document.getElementById("slaider"+right).style.display="none";
-        left-=1;
-        right-=1;
-    
-        for(i=left;i<=right;i++)
-        {
-            document.getElementById("slaider" +i).style.display="inline-block";
-        }
-    }
-    else
-        return;
-
-}
+let swiper = new Swiper(".mySwiper-specialistes", {
+    slidesPerView: 1,
+    spaceBetween: 15,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+        nextEl: ".button__next",
+        prevEl: ".button__prev",
+      },
+    breakpoints: {
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 15,
+      },
+      768: {
+        slidesPerView: 4,
+        spaceBetween: 15,
+      },
+      1024: {
+        slidesPerView: 6,
+        spaceBetween: 15,
+      },
+    },
+  });
