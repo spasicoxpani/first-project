@@ -20,7 +20,9 @@ body {
   border-radius: 20px;
   background: #fffefe;
   position: relative;
-  border: 1px solid #ccc;
+  /* border: 1px solid #ccc; */
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .card__title {
@@ -56,8 +58,6 @@ body {
   left: 24px;
 }
 
-
-
 .cards:hover .card__image path {
   fill: #59443F; 
 }
@@ -73,5 +73,14 @@ body {
 
 .cards:hover .card__image-rep path{
   fill: #59443F; 
+  stroke: #59443F; 
+}
+
+.card__image-apt #Vector{
+  fill:#ffc59e;
+}
+
+.cards:hover .card__image-apt #Vector{
+  fill: #59443F;
   stroke: #59443F; 
 }
