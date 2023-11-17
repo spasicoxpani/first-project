@@ -1,0 +1,122 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  width: 1920px;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  background: #FFFEFE;;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+blockquote, button {
+  margin: 0;
+  padding: 0;
+}
+
+
+.history {
+    background-color: #FBF8F8;
+    padding-bottom: 206px;
+}
+
+h2 {
+    color: var(--text, #080606);
+    text-align: center;
+    font-family: 'SchoolBook', sans-serif;
+    font-size: 40px;
+    line-height: 40px; 
+}
+
+.history__title {
+    padding-top: 180px;
+    padding-bottom: 48px;
+}
+
+.history__text {
+    display: block;
+    padding-left: 720px;
+    padding-right: 720px;
+    padding-bottom: 36px;
+    color: var(--brown, #59443F);
+    font-family: 'Futura New', sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.button_history__read_more, .button_our_specialistes__read_more {
+    display: flex;
+    height: 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    color: var(--orange, #FFC59E);
+    font-family: 'Futura New Bold', sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    white-space: nowrap;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.button_history__read_more:active, .button_our_specialistes__read_more:active {
+ color: #59443F;
+ fill: #59443F;
+}
+
+.button_history__read_more {
+    margin-left: 875px;
+    margin-bottom: 100px;
+}
+
+.our_specialistes {
+    padding-bottom: 48px;
+}
+
+
+.our_specialistes__slaider {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    height: 178px;
+    margin: 0 334px 36px 333px;
+  }
+
+  .our_specialist__slide {
+    width: 178px;
+    display: none;
+  }
+
+.button__slaider {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.button__slaider-image:active {
+    fill: #59443F;
+}
+
+
+.button_our_specialistes__read_more {
+    margin: 0 856px 0 855px;
+}
+
+
