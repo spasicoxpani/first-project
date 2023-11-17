@@ -118,6 +118,60 @@ ol {
 
 .reasons__card-description {
   inline-size: 318px;
-
   line-height: 30px; /* 150% */
+}
+
+.contacts {
+  display: flex;
+  gap: 26px;
+  margin-block: 235px 209px;
+  justify-content: center;
+}
+
+.contacts__info-heading {
+  color: #080606;
+  font-family: "School Book", "Times New Roman", Times, serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 40px; /* 100% */
+  margin-block-end: 70px;
+}
+
+.contacts__info {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.department__info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 484px;
+}
+
+.department__title {
+  color: #080606;
+  font-family: "School Book", "Times New Roman", Times, serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 40px; /* 133.333% */
+}
+
+.department__contacts-container {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.department__contact {
+  color: #59443f;
+  font-weight: 400;
+  line-height: 30px; /* 150% */
+}
+
+.contacts__info-map {
+  width: 50vw;
+  height: 526px;
+  align-self: flex-end;
 }
