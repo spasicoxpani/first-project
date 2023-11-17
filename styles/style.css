@@ -1,339 +1,92 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-  display: flex;
-  margin: 0;
-  padding: 0;
-  justify-content: center;
-  align-items: center;
+  background-color: FFFEFE;
 }
 
-.card {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  gap: 24px;
-  margin-top: 150px ;
-}
-
-.cards {
-  width: 320px;
-  height: 220px;
-  border-radius: 20px;
-  background: #fffefe;
-  position: relative;
-  border: 1px solid #ccc;
-}
-
-.card__title {
-  color: #59443f;
-  font-family: 'SchoolBook', sans-serif;
-  font-size: 30px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 40px;
-  padding: 24px;
-}
-
-.card__image {
-  padding-top: 22px;
-  width: 110px;
-  height: 110px;
-  object-fit:contain;
-  position: absolute;
-  bottom: 0px;
-  right: 0px;
-  padding-right: 24px;
-  padding-bottom: 24px;
-}
-
-.small__text {
-  position: absolute;
-  bottom: 0;
-  font-family: Futura New;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 20px;
-  left: 24px;
-}
-
-
-
-.cards:hover .card__image path {
-  fill: #59443F; 
-}
-
-.card:hover{
-  cursor: pointer;
-}
-
-/**
-HEADER-FOOTER
-*/
-
-/* Header */
-
-.header {
-  display: grid;
-  grid-template-columns: 1fr 4fr 1fr;
-  max-width: 1760px;
+.conteiner {
+  max-width: 1920px;
   margin: 0 auto;
-  font-family: "Futura New", Helvetica, Arial, sans-serif;
+  padding: 0;
 }
 
-.header__logo {
-  width: 334px;
+.list {
+  position: absolute;
+  z-index: -1;
+  top: 297px;
+  left: 112px;
 }
-
-.header__logo-image {
-  width: 100px;
-  height: 100px;
-}
-
-.header__location {
-  width: 57px;
-  height: 31px;
-}
-
-.header__menu {
-  display: flex;
-  align-items: center;
-}
-
-.header__links-list {
-  display: flex;
-  gap: 81px;
-  font-size: 20px;
-  list-style-type: none;
-}
-
-.header__link {
-  color: #c3b9b5;
-  font-family: "Futura New", Helvetica, Arial, sans-serif;
-  font-weight: 700;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-.header__link:hover {
-  color: #59443f;
-}
-
-.header__location-container {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-.header__location-link {
-  display: flex;
-  align-items: center;
-  color: #ffc59e;
-  font-weight: 700;
-  font-size: 19px;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-@media (max-width: 1490px) {
-  .header__logo {
-    width: inherit;
-  }
-  .header__links-list {
-    gap: 45px;
-    font-size: 18px;
-  }
-  .header__location-container {
-    justify-content: flex-start;
-  }
-  .header__location-link {
-    font-family: "Futura New", Helvetica, Arial, sans-serif;
-    font-size: 18px;
-  }
-}
-
-@media (max-width: 1100px) {
-  .header__logo {
-    width: inherit;
-  }
-  .header__links-list {
-    gap: 40px;
-    font-size: 17px;
-  }
-  .header__location-container {
-    justify-content: flex-start;
-  }
-  .header__location-link {
-    font-family: "Futura New", Helvetica, Arial, sans-serif;
-    font-size: 15px;
-  }
-}
-
-/* Main */
 
 .main {
-  height: 2000px;
-  min-height: 2000px;
-  font-family: "Futura New", Helvetica, Arial, sans-serif;
-}
-
-/* Footer */
-
-.footer {
-  background-color: #59443f;
-}
-
-.footer__container {
-  display: flex;
-  justify-content: center;
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 90px 0 60px;
-  font-family: "Futura New", Helvetica, Arial, sans-serif;
-}
-
-.footer__menu-list {
-  width: 192px;
-  list-style-type: none;
-}
-
-.footer__menu-list-item {
-  color: #fff;
-  font-weight: 400;
-  font-size: 20px;
-  font-style: normal;
-  line-height: 30px;
-}
-
-.footer__menu-link {
-  text-decoration: none;
-}
-
-.footer__menu-link:hover {
-  text-decoration: underline;
-}
-
-.footer__social-list {
-  display: flex;
-  gap: 50px;
-  list-style-type: none;
-}
-
-.footer__social-icon {
-  width: 40px;
-  height: 40px;
-}
-
-.footer__menu-container {
-  display: flex;
-  flex-direction: column;
-}
-
-.footer__menu {
-  display: flex;
-  flex-direction: row;
-  gap: 100px;
-  margin-top: 42px;
-}
-
-.footer__right {
-  padding-left: 258px;
-}
-
-.footer__mobile-container {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 36px;
+  padding-top: 303px;
+  padding-left: 407px;
+  padding-right: 200px;
 }
 
-.footer__mobile-link {
-  padding-top: 9px;
-}
-
-.footer__mobile-icon {
-  height: 41px;
-}
-
-.footer__link-list {
-  margin-top: 26px;
-  list-style-type: none;
-}
-
-.footer__link-list-item {
-  font-weight: 400;
-  font-size: 20px;
+.main__title {
+  color: #080606;
+  font-family: SchoolBook, sans-serif;
+  font-size: 80px;
   font-style: normal;
-  line-height: 30px;
+  font-weight: 400;
+  line-height: 1.4;
+  margin-top: 0;
+  margin-bottom: 70px;
 }
 
-.footer__link {
-  color: #fff;
+.main__link {
+  background-color: #FFC59E;
+  box-shadow: 0px 4px 20px 0px #FFC59E;
+  font-weight: 700;
+  font-size: 20px;
+  color: #FFF;
+  font-family: Futura New, sans-serif;
+  text-transform: uppercase;
   text-decoration: none;
+  padding: 19px 76px;
+  border-radius: 33.5px;
 }
 
-.footer__link:hover {
-  text-decoration: underline;
+.main__social {
+  margin-top: 216px;
 }
 
-.footer__heart-text {
+.social {
   display: flex;
   align-items: center;
-  margin-top: 70px;
-  color: #fff;
-  font-weight: 400;
-  font-size: 20px;
-  font-style: normal;
-  line-height: 30px;
+  list-style-type: none;
+  padding-left: 0;
+  gap: 50px;
 }
 
-.footer__heart-icon {
-  width: 22px;
-  height: 22px;
-  margin: 0 3px;
+.social__svg {
+  fill: #C3B9B5;
 }
 
-.footer__menu-list-logo {
-  display: flex;
-}
-
-.footer_logo-container {
-  display: flex;
-  flex-direction: column;
-}
-
-.footer_logo-container::before {
-  content: "";
+.main__image {
   position: absolute;
-  top: 0;
-  left: -112px;
-  z-index: 1;
-  width: 90px;
-  height: 90px;
-  background: url(../images/logo-invert.svg) no-repeat center center/cover;
+  z-index: -1;
+  padding-left: 673px;
+  top: 300px;
 }
 
-.footer__logo {
-  position: relative;
+.main__address {
   display: flex;
+  align-items: flex-end;
+  padding-bottom: 13px;
+  padding-right: 15px;
 }
 
-.footer__logo-image {
-  width: 90px;
-  height: 90px;
-}
-
-.footer_logo-title {
-  color: #fff;
-  font-family: "SchoolBook", "Times New Roman", Times, serif;
+.address-list a {
+  text-decoration: none;
+  color: #59443F;
+  font-family: Futura New, sans-serif;
+  font-size: 24px;
+  font-style: normal;
   font-weight: 700;
-  font-size: 51px;
-  font-style: normal;
-  line-height: 64px;
-}
-
-.footer_logo-description {
-  color: #fff;
-  font-weight: 400;
-  font-size: 20px;
-  font-style: normal;
-  line-height: 13px;
+  line-height: 30px;
 }
