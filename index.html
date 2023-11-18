@@ -8,6 +8,7 @@
   <title>Айболит - круглосуточная ветклиника</title>
   <link rel="stylesheet" href="./fonts/fonts.css" />
   <link rel="stylesheet" href="./styles/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 
 <body>
@@ -268,8 +269,136 @@
       ></iframe>
     </section>
 
+
+    <section class="history" >
+      <h2 class="history__title">История компании</h2>
+      <p class="history__text">
+          История компании начинается 14 января 1999 года, когда было образовано ООО «Чижи». 
+          Идея пришла, т.к. у основателя компании Прозор Жанны Георгиевны была собака боксёр 
+          по кличке Бард…
+      </p>
+      <button class="button_history__read_more" type="button">
+              <div class="button__title">
+                  ЧИТАТЬ ДАЛЕЕ
+              </div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="24" viewBox="0 0 20 24" fill="none">
+                  <path class="button__title-image" d="M13.4287 12C13.4287 11.7849 13.3447 11.5699 13.177 11.4059L7.89675 6.24617C7.56086 5.91794 7.01628 5.91794 6.68052 6.24617C6.34477 6.57426 6.34477 7.10632 6.68052 7.43458L11.3528 12L6.68069 16.5654C6.34494 16.8936 6.34494 17.4256 6.68069 17.7537C7.01644 18.0821 7.56102 18.0821 7.89691 17.7537L13.1771 12.594C13.3449 12.43 13.4287 12.215 13.4287 12Z" fill="#FFC59E" stroke="#FFC59E"/>
+              </svg>
+      </button>
+      <h2 class="our_specialistes">Наши специалисты</h2>
+      <div class="swiper__our_specialistes">
+          <div class="gallery">
+              <div class="swiper__navigation">
+                  <button class="button__slaider button__prev">
+                      <svg  width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g filter="url(#filter0_b_3_12)">
+                          <path class="button__slaider-image" fill-rule="evenodd" clip-rule="evenodd" d="M20 40C8.9543 40 0 31.0457 0 20C0 8.9543 8.9543 0 20 0C31.0457 0 40 8.9543 40 20C40 31.0457 31.0457 40 20 40Z" fill="#FFC59E"/>
+                          <path d="M15.5713 20C15.5713 19.7849 15.6553 19.5699 15.823 19.4059L21.1033 14.2462C21.4391 13.9179 21.9837 13.9179 22.3195 14.2462C22.6552 14.5743 22.6552 15.1063 22.3195 15.4346L17.6472 20L22.3193 24.5654C22.6551 24.8936 22.6551 25.4256 22.3193 25.7537C21.9836 26.0821 21.439 26.0821 21.1031 25.7537L15.8229 20.594C15.6551 20.43 15.5713 20.215 15.5713 20Z" fill="white" stroke="white"/>
+                          </g>
+                          <defs>
+                          <filter id="filter0_b_3_12" x="-40" y="-40" width="120" height="120" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                          <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                          <feGaussianBlur in="BackgroundImageFix" stdDeviation="20"/>
+                          <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_3_12"/>
+                          <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_3_12" result="shape"/>
+                          </filter>
+                          </defs>
+                          </svg>
+                  </button>
+                  <button class="button__slaider button__next">
+                      <svg  width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g filter="url(#filter0_b_3_12)">
+                          <path class="button__slaider-image" fill-rule="evenodd" clip-rule="evenodd" d="M20 40C8.9543 40 0 31.0457 0 20C0 8.9543 8.9543 0 20 0C31.0457 0 40 8.9543 40 20C40 31.0457 31.0457 40 20 40Z" fill="#FFC59E"/>
+                          <path d="M24.4287 20C24.4287 19.7849 24.3447 19.5699 24.177 19.4059L18.8967 14.2462C18.5609 13.9179 18.0163 13.9179 17.6805 14.2462C17.3448 14.5743 17.3448 15.1063 17.6805 15.4346L22.3528 20L17.6807 24.5654C17.3449 24.8936 17.3449 25.4256 17.6807 25.7537C18.0164 26.0821 18.561 26.0821 18.8969 25.7537L24.1771 20.594C24.3449 20.43 24.4287 20.215 24.4287 20Z" fill="white" stroke="white"/>
+                          </g>
+                          <defs>
+                          <filter id="filter0_b_3_12" x="-40" y="-40" width="120" height="120" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                          <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                          <feGaussianBlur in="BackgroundImageFix" stdDeviation="20"/>
+                          <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_3_12"/>
+                          <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_3_12" result="shape"/>
+                          </filter>
+                          </defs>
+                          </svg>
+                  </button>
+              </div>
+              <div class="swiper mySwiper-specialistes">
+                  <div class="swiper-wrapper">
+  
+                    <div class="swiper-slide">
+                      <a class="swiper-slide__link" href="#0" >
+                          <img class="our_specialistes-photo"
+                          src="./images/Ellipse.png"
+                          alt="">
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a class="swiper-slide__link" href="#0" >
+                          <img class="our_specialistes-photo"
+                          src="./images/Rectangle Copy 19.png"
+                          alt="">
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a class="swiper-slide__link" href="#0" >
+                          <img class="our_specialistes-photo"
+                          src="./images/Rectangle Copy 21.png"
+                          alt="">
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a class="swiper-slide__link"  href="#0" >
+                          <img class="our_specialistes-photo"
+                          src="./images/Ellipse (1).png"
+                          alt="">
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a class="swiper-slide__link" href="#0" >
+                          <img class="our_specialistes-photo"
+                          src="./images/Ellipse (2).png"
+                          alt="">
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a class="swiper-slide__link" href="#0" >
+                          <img class="our_specialistes-photo"
+                          src="./images/Rectangle Copy 36.png"
+                          alt="">
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a class="swiper-slide__link" href="#0" >
+                          <img class="our_specialistes-photo"
+                          src="./images/Ellipse (3).png"
+                          alt="">
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a class="swiper-slide__link" href="#0" >
+                          <img class="our_specialistes-photo"
+                          src="./images/Ellipse (4).png"
+                          alt="">
+                      </a>
+                    </div>
+                  </div>
+          </div>
+      </div>
+      <button class="button_our_specialistes__read_more" type="button">
+          <div class="button__title">
+              ПОСМОТРЕТЬ ВСЕХ
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="24" viewBox="0 0 20 24" fill="none">
+              <path class="button__title-image" d="M13.4287 12C13.4287 11.7849 13.3447 11.5699 13.177 11.4059L7.89675 6.24617C7.56086 5.91794 7.01628 5.91794 6.68052 6.24617C6.34477 6.57426 6.34477 7.10632 6.68052 7.43458L11.3528 12L6.68069 16.5654C6.34494 16.8936 6.34494 17.4256 6.68069 17.7537C7.01644 18.0821 7.56102 18.0821 7.89691 17.7537L13.1771 12.594C13.3449 12.43 13.4287 12.215 13.4287 12Z" fill="#FFC59E" stroke="#FFC59E"/>
+          </svg>
+      </button>
+  </section>
+
     <footer></footer>
   </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./js/js.js"></script>
 </body>
 
 </html>
