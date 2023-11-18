@@ -9,13 +9,8 @@ GLOBAL STYLES
 }
 
 body {
-  /*
-  с этим едет, не надо для боди такое задавать
   display: flex;
-  justify-content: center;
-  align-items: center;*/
-  min-width: 1100px;
-  max-width: 1920px;
+  flex-direction: column;
   margin: 0;
   padding: 0;
   background: #fffefe;
@@ -53,6 +48,11 @@ address {
 /**
 HEADER-FOOTER
 */
+
+main {
+  max-width: 1760px;
+  margin:0 auto;
+}
 
 /* Header */
 
