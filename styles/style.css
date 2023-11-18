@@ -152,14 +152,6 @@ HEADER-FOOTER
   }
 }
 
-/* Main */
-
-.main {
-  height: 2000px;
-  min-height: 2000px;
-  font-family: "Futura New", Helvetica, Arial, sans-serif;
-}
-
 /* Footer */
 
 .footer {
