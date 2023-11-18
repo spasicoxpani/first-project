@@ -9,6 +9,15 @@
   font-display: swap;
 }
 
+@font-face{
+    font-family: 'Futura New Bold';
+    src: url(../fonts/FuturaNewBold-Reg.ttf) format('truetype');
+    src:url(../fonts/FuturaNewBold-Reg.woff) format('woff');
+    src:url(../fonts/FuturaNewBold-Reg.woff2) format('woff2');
+    font-weight: 700;
+    font-display: swap;
+}
+
 @font-face {
   font-family: "School Book";
   src: local("School Book Regular"), local("School-Book-Regular"),
