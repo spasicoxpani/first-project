@@ -7,9 +7,9 @@
 body {
   max-width: 1920px;
   margin: 0;
-  margin-left: auto;
   margin-right: auto;
-  background: #FFFEFE;;
+  margin-left: auto;
+  background: #fffefe;
 }
 
 h1,
@@ -22,122 +22,119 @@ p,
 ul,
 ol,
 li,
-blockquote, button {
+blockquote,
+button {
   margin: 0;
   padding: 0;
 }
 
-
 .history {
-    background-color: #FBF8F8;
-    padding-bottom: 206px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 206px;
+  background-color: #fbf8f8;
 }
 
 h2 {
-    color: var(--text, #080606);
-    text-align: center;
-    font-family: 'SchoolBook', sans-serif;
-    font-size: 40px;
-    line-height: 40px; 
+  color: var(--text, #080606);
+  font-family: "SchoolBook", sans-serif;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
 }
 
 .history__title {
-    padding-top: 180px;
-    padding-bottom: 48px;
+  padding-top: 180px;
+  padding-bottom: 48px;
 }
 
 .history__text {
-    display: flex;
-    justify-content: center;
-    margin-left: 720px;
-    margin-right: 720px;
-    padding-bottom: 36px;
-    color: var(--brown, #59443F);
-    font-family: 'Futura New', sans-serif;
-    font-size: 20px;
-    line-height: 30px;
-    width: 479px;
+  display: flex;
+  justify-content: center;
+  width: 479px;
+  padding-bottom: 36px;
+  color: var(--brown, #59443f);
+  font-family: "Futura New", sans-serif;
+  font-size: 20px;
+  line-height: 30px;
 }
 
-.button_history__read_more, .button_our_specialistes__read_more {
-    display: flex;
-    height: 24px;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-    color: var(--orange, #FFC59E);
-    font-family: 'Futura New Bold', sans-serif;
-    font-size: 20px;
-    line-height: 20px;
-    white-space: nowrap;
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
+.button_history__read_more,
+.button_our_specialistes__read_more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  height: 24px;
+  border: none;
+  color: var(--orange, #ffc59e);
+  font-family: "Futura New Bold", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  background-color: transparent;
+  cursor: pointer;
+  white-space: nowrap;
 }
 
-.button_history__read_more:active, .button_our_specialistes__read_more:active {
-    color: #59443F;
-    fill: #59443F;
-}
-
-.button_history__read_more {
-    margin-left: 875px;
-    margin-bottom: 100px;
+.button_history__read_more:active,
+.button_our_specialistes__read_more:active {
+  color: #59443f;
+  fill: #59443f;
 }
 
 .our_specialistes {
-    padding-bottom: 48px;
+  padding-top: 100px;
+  padding-bottom: 48px;
 }
 
 .gallery {
-    position: relative;
-    margin: 0 389px 36px 388px;
+  position: relative;
+  width: 1253px;
+  margin: 0 auto;
+  margin-bottom: 36px;
 }
 
 .swiper-slide__link {
-    display: block;
-    height: 178px;
-    width: 178px;
-
+  display: block;
+  width: 178px;
+  height: 178px;
 }
 
 .our_specialistes-photo {
-    width: 178px;
-    height: 178px;
-    object-fit: cover;
+  width: 178px;
+  height: 178px;
+  object-fit: cover;
 }
 
 .button__slaider {
-    position: absolute;
-    top: 50%;
-    margin-top: -20px;
-    width: 40px;
-    height: 40px;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-
+  position: absolute;
+  top: 50%;
+  width: 40px;
+  height: 40px;
+  margin-top: -20px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .button__prev {
-    left: -55px;
+  left: -55px;
 }
 
 .button__next {
-    right: -55px;
+  right: -55px;
 }
 
 .button__slaider-image:active {
-    fill: #59443F;
+  fill: #59443f;
 }
 
 .swiper-button-disabled {
-    opacity: 0.4;
-    cursor: default;
+  opacity: 0.4;
+  cursor: default;
 }
 
 .button_our_specialistes__read_more {
-    margin: 0 856px 0 855px;
+  margin: 0 856px 0 855px;
 }
-
-
