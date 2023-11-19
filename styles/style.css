@@ -1,0 +1,89 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+.add__app {
+    display: flex;
+    flex-direction: column;
+    width: 1920px;
+    height: 1080px;
+    background-color: #FFC59E;
+    position: relative;
+    padding-left: 230px;
+}
+
+.mini__title {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Futura New', sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    max-width: 73px;
+    padding-top: 251px;
+    padding-bottom: 30px;
+}
+
+.big__title {
+    color: #FFF;
+    font-family: SchoolBook, serif;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 105px;
+    max-width: 826px;
+    min-height: 330px;
+    margin-bottom: 42px;
+}
+    
+.loading__list {
+    list-style-type:none;
+    display: flex;
+    gap: 24px;
+}
+
+.image__add {
+    width: 164px;
+    height: 47px;
+}
+
+.image_dog {
+    width: 474px;
+    height: 534px;
+    background-image: url("../images/30186.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 900px;
+    top:363px;
+}
+
+.screen__registration {
+    background-image: url("../images/Group\ 5.jpg");
+    height: 645px;
+    width: 320px;
+    background-repeat: no-repeat;
+    border-radius: 50px;
+    background-size: cover;
+    position: absolute;
+    top: 240px;
+    left: 1233px;
+}

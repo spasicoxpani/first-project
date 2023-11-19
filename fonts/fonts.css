@@ -1,0 +1,17 @@
+@font-face {
+    font-family: Futura New;
+    src: url(./FuturaNewLight-Reg.woff2) format('woff2');
+    src: url(./FuturaNewLight-Reg.woff) format('woff');
+    src: url(./FuturaNewLight-Reg.ttf) format('ttf');
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: SchoolBook;
+    src: url(./SchoolBookC.woff2) format('woff2');
+    src: url(./SchoolBookC.woff) format('woff');
+    src: url(./SchoolBookC.ttf) format('ttf');
+    font-weight: normal;
+    font-display: swap;;
+}
