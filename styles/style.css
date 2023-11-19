@@ -322,60 +322,79 @@ card section
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   justify-items: center;
-  /* grid-template-rows: repeat(4, 1fr); */
   gap: 24px;
   margin-top: 150px;
   margin-inline: 14vw;
 }
 
 .cards {
-  position: relative;
   width: 320px;
   height: 220px;
-  border: 1px solid #ccc;
   border-radius: 20px;
   background: #fffefe;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .card__title {
-  padding: 24px;
   color: #59443f;
-  font-family: "SchoolBook", sans-serif;
-  font-weight: 400;
+  font-family: 'SchoolBook', sans-serif;
   font-size: 30px;
   font-style: normal;
+  font-weight: 400;
   line-height: 40px;
+  padding: 24px;
 }
 
 .card__image {
-  position: absolute;
-  right: 0px;
-  bottom: 0px;
+  padding-top: 22px;
   width: 110px;
   height: 110px;
-  padding-top: 22px;
+  object-fit:contain;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
   padding-right: 24px;
   padding-bottom: 24px;
-  object-fit: contain;
 }
 
 .small__text {
   position: absolute;
-  bottom: 0;
-  left: 24px;
   font-family: Futura New;
-  font-weight: 400;
   font-size: 20px;
   font-style: normal;
+  font-weight: 400;
   line-height: 20px;
+  left: 24px;
+  bottom: 24px;
 }
 
 .cards:hover .card__image path {
-  fill: #59443f;
+  fill: #59443F; 
 }
 
-.card:hover {
+.card:hover{
   cursor: pointer;
+}
+
+.cards:hover .card__image-doge path{
+  fill: none;
+  stroke: #59443F; 
+}
+
+.cards:hover .card__image-rep path{
+  fill: #59443F; 
+  stroke: #59443F; 
+}
+
+.card__image-apt #Vector{
+  fill:#ffc59e;
+}
+
+.cards:hover .card__image-apt #Vector{
+  fill: #59443F;
+  stroke: #59443F; 
 }
 
 /**
