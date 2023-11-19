@@ -50,8 +50,8 @@ HEADER-FOOTER
 */
 
 main {
-  max-width: 1760px;
-  margin:0 auto;
+  width: 100%;
+  margin: 0 auto;
 }
 
 /* Header */
@@ -320,10 +320,12 @@ card section
 
 .card {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  justify-items: center;
+  /* grid-template-rows: repeat(4, 1fr); */
   gap: 24px;
   margin-top: 150px;
+  margin-inline: 14vw;
 }
 
 .cards {
@@ -377,31 +379,21 @@ card section
 }
 
 /**
-conteiner section
+appointment section
 */
 
-.conteiner {
+.appointment {
   max-width: 1920px;
   margin: 0 auto;
   padding: 0;
-}
-
-.list {
-  position: absolute;
-  top: 297px;
-  left: 112px;
-  z-index: -1;
-}
-
-.main {
   display: flex;
-  justify-content: space-between;
-  padding-top: 303px;
-  padding-right: 200px;
-  padding-left: 407px;
 }
 
-.main__title {
+.hidden {
+  display: none;
+}
+
+.appointment__title {
   margin-top: 0;
   margin-bottom: 70px;
   color: #080606;
@@ -412,7 +404,7 @@ conteiner section
   line-height: 1.4;
 }
 
-.main__link {
+.appointment__sign-up-link {
   border-radius: 33.5px;
   padding: 19px 76px;
   box-shadow: 0px 4px 20px 0px #ffc59e;
@@ -425,11 +417,8 @@ conteiner section
   background-color: #ffc59e;
 }
 
-.main__social {
-  margin-top: 216px;
-}
-
-.social {
+.appointment__social-list {
+  margin-top: 10vw;
   display: flex;
   align-items: center;
   gap: 50px;
@@ -438,30 +427,36 @@ conteiner section
 }
 
 .social__svg {
-  fill: #c3b9b5;
+  fill: hsl(17, 10%, 74%);
 }
 
-.main__image {
+.appointment__slide-decoration {
+  align-self: flex-end;
+}
+
+.appointment__image-container {
   position: absolute;
-  top: 300px;
-  z-index: -1;
-  padding-left: 673px;
+  inset-inline-end: 0px;
+  inset-block-start: 130px;
+  width: 44vw;
+  height: 41vw;
+  background-image: url("../images/dog_kitten.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.main__address {
-  display: flex;
-  align-items: flex-end;
-  padding-right: 15px;
-  padding-bottom: 13px;
-}
-
-.address-list a {
+.appointment__phone-number {
   color: #59443f;
   font-family: "Futura New", Arial, sans-serif;
   font-weight: 700;
   font-size: 20px;
   font-style: normal;
   line-height: 30px;
+  position: absolute;
+  inset-inline-end: 78px;
+}
+
+.appointment__phone-number a {
   text-decoration: none;
 }
 
