@@ -50,7 +50,7 @@ HEADER-FOOTER
 */
 
 main {
-  max-width: 1760px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -320,10 +320,12 @@ card section
 
 .card {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  justify-items: center;
+  /* grid-template-rows: repeat(4, 1fr); */
   gap: 24px;
   margin-top: 150px;
+  margin-inline: 14vw;
 }
 
 .cards {
@@ -452,7 +454,6 @@ appointment section
   line-height: 30px;
   position: absolute;
   inset-inline-end: 78px;
-
 }
 
 .appointment__phone-number a {
