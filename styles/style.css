@@ -122,13 +122,16 @@ main {
   .header__logo {
     width: inherit;
   }
+
   .header__links-list {
     gap: 45px;
     font-size: 18px;
   }
+
   .header__location-container {
     justify-content: flex-start;
   }
+
   .header__location-link {
     font-family: "Futura New", Helvetica, Arial, sans-serif;
     font-size: 18px;
@@ -139,13 +142,16 @@ main {
   .header__logo {
     width: inherit;
   }
+
   .header__links-list {
     gap: 40px;
     font-size: 17px;
   }
+
   .header__location-container {
     justify-content: flex-start;
   }
+
   .header__location-link {
     font-family: "Futura New", Helvetica, Arial, sans-serif;
     font-size: 15px;
@@ -382,11 +388,47 @@ card section
 appointment section
 */
 
+.appointment__button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding-left: 53px;
+  color: #C3B9B5;
+  font-family: Futura New;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.appointment__button:last-child {
+  margin-top: 0;
+  margin-bottom: 70px;
+}
+
+.appointment__button:hover {
+  cursor: pointer;
+  color: #080606;
+}
+
+
 .appointment {
   max-width: 1920px;
   margin: 0 auto;
   padding: 0;
   display: flex;
+  padding-top: 308px;
+}
+
+.appointment__slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 280px;
+  padding-top: 5px;
 }
 
 .hidden {
@@ -406,7 +448,7 @@ appointment section
 
 .appointment__sign-up-link {
   border-radius: 33.5px;
-  padding: 19px 76px;
+  padding: 21px 84px;
   box-shadow: 0px 4px 20px 0px #ffc59e;
   color: #fff;
   font-family: Futura New, sans-serif;
@@ -418,7 +460,7 @@ appointment section
 }
 
 .appointment__social-list {
-  margin-top: 10vw;
+  margin-top: 10.45vw;
   display: flex;
   align-items: center;
   gap: 50px;
@@ -434,26 +476,80 @@ appointment section
   align-self: flex-end;
 }
 
-.appointment__image-container {
+.appointment__image-container__slide-1 {
   position: absolute;
   inset-inline-end: 0px;
-  inset-block-start: 130px;
-  width: 44vw;
-  height: 41vw;
+  inset-block-start: 291px;
+  left: 1083px;
+  width: 41.4vw;
+  height: 38.3vw;
   background-image: url("../images/dog_kitten.png");
   background-repeat: no-repeat;
-  background-size: cover;
+}
+
+.appointment__image-container__slide-2 {
+  position: absolute;
+  inset-inline-end: 0px;
+  inset-block-start: 291px;
+  left: 1083px;
+  width: 41.4vw;
+  height: 38.3vw;
+  background-image: url("../images/doctoranddogs.png");
+  background-repeat: no-repeat;
+}
+
+.appointment__image-container__slide-3 {
+  position: absolute;
+  inset-inline-end: 0px;
+  inset-block-start: 291px;
+  left: 1083px;
+  width: 41.4vw;
+  height: 38.3vw;
+  background-image: url("../images/dog2.png");
+  background-repeat: no-repeat;
+}
+
+.appointment__image-container__slide-4 {
+  position: absolute;
+  inset-inline-end: 0px;
+  inset-block-start: 291px;
+  left: 1083px;
+  width: 41.4vw;
+  height: 38.3vw;
+  background-image: url("../images/rabit.png");
+  background-repeat: no-repeat;
+}
+
+.appointment__image-container__slide-5 {
+  position: absolute;
+  inset-inline-end: 0px;
+  inset-block-start: 291px;
+  left: 1083px;
+  width: 41.4vw;
+  height: 38.3vw;
+  background-image: url("../images/cat.png");
+  background-repeat: no-repeat;
+}
+
+.appointment__image-container__slide-6 {
+  position: absolute;
+  inset-inline-end: 0px;
+  inset-block-start: 291px;
+  left: 1083px;
+  width: 41.4vw;
+  height: 38.3vw;
+  background-image: url("../images/dogs.png");
+  background-repeat: no-repeat;
 }
 
 .appointment__phone-number {
   color: #59443f;
-  font-family: "Futura New", Arial, sans-serif;
+  font-family: Futura New Bold, Arial, sans-serif;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 23px;
   font-style: normal;
-  line-height: 30px;
   position: absolute;
-  inset-inline-end: 78px;
+  inset-inline-end: 227px;
 }
 
 .appointment__phone-number a {
@@ -477,7 +573,8 @@ pets-count section
   font-family: "School Book", "Times New Roman", Times, serif;
   font-weight: 700;
   font-size: 144px;
-  line-height: 110px; /* 76.389% */
+  line-height: 110px;
+  /* 76.389% */
   letter-spacing: 0.01em;
   inline-size: 716px;
 }
@@ -491,7 +588,8 @@ pets-count section
   font-family: Futura New;
   font-weight: 400;
   font-size: 80px;
-  line-height: 110px; /* 137.5% */
+  line-height: 110px;
+  /* 137.5% */
   inline-size: 716px;
 }
 
@@ -519,7 +617,8 @@ reasons section
   font-family: "School Book", "Times New Roman", Times, serif;
   font-weight: 400;
   font-size: 40px;
-  line-height: 40px; /* 100% */
+  line-height: 40px;
+  /* 100% */
   text-align: center;
 }
 
@@ -540,7 +639,8 @@ reasons section
   font-family: "School Book", "Times New Roman", Times, serif;
   font-weight: 400;
   font-size: 30px;
-  line-height: 40px; /* 133.333% */
+  line-height: 40px;
+  /* 133.333% */
 }
 
 .reasons__card {
@@ -555,7 +655,8 @@ reasons section
 }
 
 .reasons__card-description {
-  line-height: 30px; /* 150% */
+  line-height: 30px;
+  /* 150% */
   inline-size: 318px;
 }
 
@@ -576,7 +677,8 @@ contacts section
   font-family: "School Book", "Times New Roman", Times, serif;
   font-weight: 400;
   font-size: 40px;
-  line-height: 40px; /* 100% */
+  line-height: 40px;
+  /* 100% */
 }
 
 .contacts__info {
@@ -597,7 +699,8 @@ contacts section
   font-family: "School Book", "Times New Roman", Times, serif;
   font-weight: 400;
   font-size: 30px;
-  line-height: 40px; /* 133.333% */
+  line-height: 40px;
+  /* 133.333% */
 }
 
 .department__contacts-container {
@@ -609,7 +712,8 @@ contacts section
 .department__contact {
   color: #59443f;
   font-weight: 400;
-  line-height: 30px; /* 150% */
+  line-height: 30px;
+  /* 150% */
 }
 
 .contacts__info-map {
@@ -684,7 +788,7 @@ history section
 
 .gallery {
   position: relative;
-  width: 1253px;
+  width: 1143px;
   margin: 0 auto;
   margin-bottom: 36px;
 }
@@ -717,7 +821,7 @@ history section
 }
 
 .button__next {
-  right: -55px;
+  right: -47px;
 }
 
 .button__slaider-image:active {
