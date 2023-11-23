@@ -393,19 +393,18 @@ appointment section
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  padding-left: 53px;
+  padding-left: 123px;
   color: #C3B9B5;
   font-family: Futura New;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
-  line-height: 20px;
+  line-height: 40px;
 }
 
 .appointment__button:last-child {
   margin-top: 0;
-  margin-bottom: 70px;
+  margin-bottom: 50px;
 }
 
 .appointment__button:hover {
@@ -413,13 +412,22 @@ appointment section
   color: #080606;
 }
 
+.appointment__button:hover::before {
+  content: "";
+  position: absolute;
+  max-width: 40px;
+  padding: 19px 19px;
+  background: url(../images/process.svg) no-repeat center center/cover;
+
+  }
 
 .appointment {
   max-width: 1920px;
   margin: 0 auto;
   padding: 0;
   display: flex;
-  padding-top: 308px;
+  padding-top: 194px; 
+  
 }
 
 .appointment__slide {
@@ -480,7 +488,7 @@ appointment section
   position: absolute;
   inset-inline-end: 0px;
   inset-block-start: 291px;
-  left: 1083px;
+  left: 1154px;
   width: 41.4vw;
   height: 38.3vw;
   background-image: url("../images/dog_kitten.png");
@@ -491,7 +499,7 @@ appointment section
   position: absolute;
   inset-inline-end: 0px;
   inset-block-start: 291px;
-  left: 1083px;
+  left: 1154px;
   width: 41.4vw;
   height: 38.3vw;
   background-image: url("../images/doctoranddogs.png");
@@ -502,7 +510,7 @@ appointment section
   position: absolute;
   inset-inline-end: 0px;
   inset-block-start: 291px;
-  left: 1083px;
+  left: 1154px;
   width: 41.4vw;
   height: 38.3vw;
   background-image: url("../images/dog2.png");
@@ -513,7 +521,7 @@ appointment section
   position: absolute;
   inset-inline-end: 0px;
   inset-block-start: 291px;
-  left: 1083px;
+  left: 1154px;
   width: 41.4vw;
   height: 38.3vw;
   background-image: url("../images/rabit.png");
@@ -524,7 +532,7 @@ appointment section
   position: absolute;
   inset-inline-end: 0px;
   inset-block-start: 291px;
-  left: 1083px;
+  left: 1154px;
   width: 41.4vw;
   height: 38.3vw;
   background-image: url("../images/cat.png");
@@ -535,7 +543,7 @@ appointment section
   position: absolute;
   inset-inline-end: 0px;
   inset-block-start: 291px;
-  left: 1083px;
+  left: 1154px;
   width: 41.4vw;
   height: 38.3vw;
   background-image: url("../images/dogs.png");
@@ -549,7 +557,8 @@ appointment section
   font-size: 23px;
   font-style: normal;
   position: absolute;
-  inset-inline-end: 227px;
+  inset-inline-end: 154px;
+  top: 966px;
 }
 
 .appointment__phone-number a {
